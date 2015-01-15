@@ -13,6 +13,10 @@
         background-color: @syntax-wrap-guide-color;
     }
 
+    .cursor-line {
+        background-color: @syntax-background-color-selected;
+    }
+
     .indent-guide {
         color: @syntax-indent-guide-color;
     }
@@ -27,12 +31,12 @@
 
         .line-number {
             &.cursor-line {
-                background-color: @syntax-gutter-background-color-selected;
+                background-color: @syntax-gutter-selection-color;
                 color: @syntax-gutter-text-color-selected;
             }
 
             &.cursor-line-no-selection {
-                color: @syntax-gutter-text-color-selected;
+                background-color: @syntax-gutter-background-color-selected;
             }
         }
     }

@@ -1,30 +1,33 @@
 @import "colors";
 
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
+// Enable one of these
+@import "greys-warm";
+//@import "greys-cool";
 
 // General colors
-@syntax-text-color: @light-warm;
-@syntax-text-color-mid: @mid-warm;
-@syntax-text-color-dark: @dark-warm;
+@syntax-text-color: @light;
+@syntax-text-color-mid: @mid;
+@syntax-text-color-dark: @dark;
 @syntax-cursor-color: white;
-@syntax-selection-color: @umbra-warm;
-@syntax-background-color: @black-warm;
+@syntax-selection-color: @umbra;
+@syntax-background-color: @black;
+@syntax-background-color-selected: black;
 
 // Guide colors
-@syntax-wrap-guide-color: @penumbra-warm;
-@syntax-indent-guide-color: @umbra-warm;
-@syntax-invisible-character-color: @dark-warm;
+@syntax-wrap-guide-color: @penumbra;
+@syntax-indent-guide-color: @umbra;
+@syntax-invisible-character-color: @dark;
 
 // For find and replace markers
-@syntax-result-marker-color: @mid-warm;
+@syntax-result-marker-color: @mid;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @dark-warm;
-@syntax-gutter-text-color-selected: @mid-warm;
-@syntax-gutter-background-color: @umbra-warm;
-@syntax-gutter-background-color-selected: @penumbra-warm;
+@syntax-gutter-text-color: @dark;
+@syntax-gutter-text-color-selected: @mid;
+@syntax-gutter-selection-color: @penumbra;
+@syntax-gutter-background-color: @umbra;
+@syntax-gutter-background-color-selected: @black;
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
