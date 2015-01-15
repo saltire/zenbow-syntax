@@ -1,7 +1,7 @@
 {
   "name": "zenbow-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Zenbow theme for Atom.io",
   "repository": "https://github.com/saltire/zenbow-syntax",
   "license": "MIT",
