@@ -101,7 +101,7 @@
     }
 
     &.operator {
-        color: @syntax-text-color-dark;
+        color: @mid;
     }
 
     &.other.special-method {
@@ -127,6 +127,10 @@
     &.numeric,
     &.rgb-value {
         color: @cyan;
+
+        .punctuation {
+            color: @cyan-dark;
+        }
     }
 
     &.other.color {
@@ -147,10 +151,6 @@
 
     &.interpolation {
         color: darken(@red, 10%);
-    }
-
-    &.parameter.function {
-        color: @syntax-text-color;
     }
 }
 
@@ -189,7 +189,6 @@
         }
 
         &.variable,
-        &.parameters,
         &.array {
             color: @syntax-text-color;
         }
@@ -197,6 +196,10 @@
         &.heading,
         &.identity {
             color: @blue;
+        }
+
+        &.tag {
+            color: @orange;
         }
 
         &.bold {
@@ -211,10 +214,6 @@
     }
 
     &.css {
-        &.definition {
-            color: @red;
-        }
-
         &.separator,
         &.terminator {
             color: @orange;
@@ -260,12 +259,21 @@
     }
 
     &.name.tag {
-        color: @red;
-        text-decoration: underline;
+        color: @orange;
     }
 
     &.other.attribute-name {
-        color: @red;
+        &.css {
+            color: @red;
+
+            .punctuation {
+                color: @red;
+            }
+        }
+
+        &.html {
+            color: @yellow;
+        }
 
         &.id {
             color: @red-light;
@@ -287,12 +295,20 @@
     }
 
     &.selector {
-        color: @purple;
+        color: @red-dark;
     }
 
     &.separator {
         background-color: @syntax-text-color-mid;
         color: @syntax-text-color;
+    }
+
+    &.tag.doctype {
+        color: @red;
+    }
+
+    &.brace {
+        color: @mid;
     }
 }
 
