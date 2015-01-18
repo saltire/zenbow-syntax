@@ -71,7 +71,6 @@ atom-text-editor .search-results .marker.current-result .region {
 .entity {
     &.name.type {
         color: @orange;
-        text-decoration: underline;
     }
 
     &.other.inherited-class {
@@ -194,7 +193,7 @@ atom-text-editor .search-results .marker.current-result .region {
         }
 
         &.tag {
-            color: @orange;
+            color: @red;
         }
 
         &.bold {
@@ -246,7 +245,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
     &.name.class,
     &.name.type.class {
-        color: @purple;
+        color: @orange-light;
     }
 
     &.name.section {
@@ -254,15 +253,15 @@ atom-text-editor .search-results .marker.current-result .region {
     }
 
     &.name.tag {
-        color: @orange;
+        color: @red;
     }
 
     &.other.attribute-name {
         &.css {
-            color: @red;
+            color: @purple;
 
             .punctuation {
-                color: @red;
+                color: @purple;
             }
         }
 
@@ -271,7 +270,7 @@ atom-text-editor .search-results .marker.current-result .region {
         }
 
         &.id {
-            color: @red-light;
+            color: @purple-light;
         }
     }
 }
@@ -299,7 +298,7 @@ atom-text-editor .search-results .marker.current-result .region {
     }
 
     &.tag.doctype {
-        color: @red;
+        color: @purple;
     }
 
     &.brace {
