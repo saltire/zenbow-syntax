@@ -1,7 +1,7 @@
 {
   "name": "zenbow-warm-syntax",
   "theme": "syntax",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Warm, colourful Zenburn-like syntax theme for Atom.io",
   "repository": "https://github.com/saltire/zenbow-warm-syntax",
   "license": "MIT",
